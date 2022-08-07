@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   frontend:
-    image: 200498-12703/venoxxapp:latest
+    image: 20049812703/venoxxapp:latest
     deploy:
       replicas: 1
     ports:
