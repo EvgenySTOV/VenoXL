@@ -11,7 +11,7 @@ class TestCase(unittest.TestCase):
     def test_profile(self):
         tester = app.test_client(self)
         response = tester.get('/profile', content_type='html/text')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 401)
 
     def test_about(self):
         tester = app.test_client(self)
@@ -21,22 +21,22 @@ class TestCase(unittest.TestCase):
     def test_all(self):
         tester = app.test_client(self)
         response = tester.get('/all', content_type='html/text')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 401)
 
     def test_new(self):
         tester = app.test_client(self)
         response = tester.get('/new', content_type='html/text')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 401)
 
     def test_update(self):
         tester = app.test_client(self)
         response = tester.get('/request/1/update', content_type='html/text')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 401)
 
     def test_delete(self):
         tester = app.test_client(self)
         response = tester.get('request/1/delete', content_type='html/text')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 401)
 
     def test_login(self):
         tester = app.test_client(self)
