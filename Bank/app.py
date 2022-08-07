@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///loandata.db'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:12345@localhost:3306/venox1"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:12345@127.0.0.1:3306/venox1"
 app.config['SECRET_KEY'] = "123"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
