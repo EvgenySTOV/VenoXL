@@ -1,5 +1,5 @@
 import unittest
-from main import app
+from Bank.app import app
 
 
 class TestCase(unittest.TestCase):
