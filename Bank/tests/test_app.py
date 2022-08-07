@@ -3,7 +3,7 @@ import flask_testing as flaskr
 from flask import url_for
 from flask_login import login_required
 from flask_testing import TestCase
-from .app import app, db, User, Loan
+from Bank.app import app, db, User, Loan
 
 
 # Create the base class
