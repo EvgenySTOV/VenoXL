@@ -8,8 +8,8 @@ services:
     - published: 5000
       target: 5000
     depends_on:
-      - db
-  db:
+      - backend
+  backend:
     image: mysql:8.0.30
     ports:
       - "3306:3306"
