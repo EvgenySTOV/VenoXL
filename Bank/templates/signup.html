@@ -1,0 +1,73 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7 col-lg-5">
+      <div class="wrap">
+          <div class="login-wrap p-4 p-md-5">
+              <div class="d-flex">
+                    <div class="w-100">
+                          <p class="social-media d-flex justify-content-end"></p>
+                    </div>
+              </div>
+  <form method="POST" action="/signup">
+    <h2>Sign Up</h2>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <div class="notification is-danger">
+      {{ messages[0] }}. Go to
+      <a href="{{ url_for('login') }}">login page</a>.
+    </div>
+    {% endif %} {% endwith %}
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input
+        type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name" required=""
+        />
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input
+        type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Your Last Name" required=""
+        />
+    </div>
+    <div class="form-group">
+      <label for="name">Date of Birth</label>
+      <input
+        type="text" class="form-control" id="datebirth" name="datebirth" placeholder="MM/DD/YYYY" required=""
+        />
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input
+      type="email" class="form-control" id="email" name="email" placeholder="Enter email" required=""
+      />
+    </div>
+    <div class="form-group">
+      <label for="name">Phone number</label>
+      <input
+        type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your phone number" required=""
+        />
+    </div>
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input
+        type="text" class="form-control" id="address" name="address" placeholder="Enter Your hone address" required=""
+        />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password" class="form-control" id="password" name="password" placeholder="Password" required=""
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+  <p class="text-center">Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

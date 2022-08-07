@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<h1>
+  Welcome, {{ user.name }}!
+</h1>
+<div>
+  <table class="table table-hover" style="width: 700px;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Requested Amount</th>
+        <th scope="col">Performed At</th>
+        <th scope="col">Paid by</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for loan_request in loan_requests %}
+      <tr>
+        <td>{{ loan_request.loan }}</td>
+        <td>{{ loan_request.date_posted.strftime('%Y-%m-%d') }}</td>
+        <td>{{ loan_request.payday }}</td>
+        <td>
+          <a
+            href="{{ url_for('update_request', loan_request_id=loan_request.id) }}"
+            class="btn btn-outline-primary"
+            role="button"
+          >
+            Edit
+          </a>
+        </td>
+        <td>
+          <a
+            href="{{ url_for('delete_request', loan_request_id=loan_request.id) }}"
+            class="btn btn-outline-danger"
+            role="button"
+          >
+            Delete
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="{{ url_for('new_loan_request') }}" class="btn btn-outline-primary" role="button"
+>Add Request</a
+>
+</div>
+{% endblock %}

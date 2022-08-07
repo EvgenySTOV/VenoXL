@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<div id="intro">
+  {% with messages = get_flashed_messages() %} {% if messages %}
+  <div class="notification is-success">
+    {{ messages[0] }}
+  </div>
+  {% endif %} {% endwith %}
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-normal">Welcome to VenoXBank!</h1>
+    <p class="lead fw-normal">We are focusing on non % loans for all of our customers</p>
+    <p class="lead fw-normal"></p>Login/Register to learn more!</p>
+    <a class="btn btn-outline-secondary" href="/login">Login</a>
+    <a class="btn btn-outline-secondary" href="/signup">Sign-up</a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+</div>
+{% endblock %}
+</div>

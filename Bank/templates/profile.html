@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<h1>
+  Welcome, {{ lastname }}!
+</h1>
+<p>
+  You can find the details about your loan
+  <a href="{{ url_for('user_loan_request') }}">here</a>.
+</p>
+{% endblock %}

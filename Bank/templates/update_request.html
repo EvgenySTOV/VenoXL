@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="col-md-4 col-md-offset-4">
+  <form
+    method="POST"
+    action="{{ url_for('update_request', loan_request_id=loan_request.id) }}"
+  >
+    <h2>Update Loan details</h2>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <div class="notification is-danger">
+      {{ messages[0] }}
+    </div>
+    {% endif %} {% endwith %}
+    <div class="form-group">
+      <label for="loan">Loan Amount</label>
+      <input
+        type="number"
+        class="form-control"
+        id="loan"
+        name="loan"
+        aria-describedby="loanHelp"
+        placeholder="Enter Amount">
+    </div>
+    <div class="form-group">
+      <label for="payday">Payday</label>
+      <input
+        class="form-control"
+        type="date"
+        data-val="true"
+        data-val-required="The Created Date field is required."
+        id="payday"
+        name="payday"
+        value="">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+{% endblock %}
