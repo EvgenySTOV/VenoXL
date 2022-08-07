@@ -61,3 +61,4 @@ performing a certain task. The Jenkins server then reads the Jenkinsfile and exe
 ![Declarative Pipeline](https://user-images.githubusercontent.com/107706039/182931938-2c712421-d5af-404b-8e89-fc3ad47f8400.png)
 
 ## A FULL CI/CD PIPELINE DIAGRAM WITH INFRASTRUCTURE DIAGRAM
+1
