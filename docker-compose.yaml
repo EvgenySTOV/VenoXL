@@ -2,8 +2,8 @@ version: '3.7'
 services:
   frontend:
     image: 20049812703/venoxxapp:latest
-    environment:-SQLALCHEMY_DATABASE_URI=mysql+pymysql://evgen@myvenox:Lutik115@myvenox.mysql.database.azure.com:3306/venox1
-    
+    deploy:
+      replicas: 1
     ports:
     - published: 5000
       target: 5000
