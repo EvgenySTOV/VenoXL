@@ -70,15 +70,19 @@ This project will be based upon:
 ```
          EXIT
 ```
-12. Create the tables
+12. Change directory
+```
+         cd /Bank
+```
+13. Create the tables
 ```
          python3 create.py
 ```
-13. Start the app
+14. Start the app
 ```
-         python3 run.py        
+         python3 app.py        
 ```  
-14. Deactive the virtual environment
+15. Deactive the virtual environment
 ```
          deactivate
 ```
