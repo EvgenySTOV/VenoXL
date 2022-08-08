@@ -2,7 +2,7 @@
   <img width="800" height="300" src="https://user-images.githubusercontent.com/107706039/182932807-84d6646c-08c7-405d-b743-1f3954e4bce8.jpg">
 </p>
 
-# <p align="center"> This web app is very first beta version for VenoXBank which is focusing on non % loan for all clients.</p> 
+# <p align="center"> This web app is very a first beta version for VenoXBank which is focusing on non % loan for all clients.</p> 
 
 ## <p align="center"> The goal of this app is to help bank customers to make a loan request with their estimated pay date. After that each request will be carefully rewied by bank employee and then you will be contacted via E-mail confirming if you are eligeble for this loan or not. </p>
 
