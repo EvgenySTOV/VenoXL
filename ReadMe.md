@@ -103,6 +103,9 @@ This project will be based upon:
 ### 7. If you want to create a new account or login in another, simply press 'Logout' button on right up corner.
 - *You will be redirected on home page*
 
+## DEMONSTRATING CRUD FUNCTIONALITY
+https://drive.google.com/file/d/1Z0J06FQsifmxtYovkdH2jIavDsiLxmrt/view?usp=sharing
+
 ## HOW PIPELINE IS WORKING?
 ### A Pipeline is a group of events interlinked with each other in a sequence, the Jenkins server will take to perform the required tasks of the CI/CD process.
 > (CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.)
