@@ -32,7 +32,7 @@ This project will be based upon:
 ```
 2. Clone the repo & cd into the directory
 ```
-         git clone https://github.com/EvgenySTOV/VenoX.git
+         git clone https://github.com/EvgenySTOV/VenoXL.git
 ```
 3. Initiate the virtual environment
 ```
