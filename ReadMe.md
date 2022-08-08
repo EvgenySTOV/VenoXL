@@ -6,7 +6,7 @@
 
 ## <p align="center"> The goal of this app is to help bank customers to make a loan request with their estimated pay date. After that each request will be carefully rewied by bank employee and then you will be contacted via E-mail confirming if you are eligeble for this loan or not. </p>
 
-## SCOPE 
+### SCOPE 
 This project will be based upon:
 * Project Management
 * Python Fundamentals
