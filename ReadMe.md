@@ -135,6 +135,7 @@ https://drive.google.com/file/d/1Z0J06FQsifmxtYovkdH2jIavDsiLxmrt/view?usp=shari
 
 ## MY FULL CI/CD PIPELINE DIAGRAM
 ![444](https://user-images.githubusercontent.com/107706039/183322737-1eeccc12-d255-4c11-ac50-0ae1ab1e861d.png)
+![Screenshot (3)](https://user-images.githubusercontent.com/107706039/183424898-517d6e26-fdd4-462a-a496-b966cca2b18a.png)
 
 ## KANBAN/JIRA BOARD
 ![Screenshot (1)](https://user-images.githubusercontent.com/107706039/183324561-70981643-3c3a-483b-b2ae-f20c56dee024.png)
