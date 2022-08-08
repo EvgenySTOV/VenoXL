@@ -5,10 +5,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-# import os
-# from flask_wtf import FlaskForm
-# from wtforms import StringField, SubmitField
-
 app = Flask(__name__)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///loandata.db'
@@ -81,7 +77,7 @@ def user_loan_request():
     return render_template('all_requests.html', loan_requests=loan_requests, user=user)
 
 
-# Displaying a player and his team and add New Players
+
 @app.route("/new")
 @login_required
 def new_loan_request():
@@ -101,7 +97,6 @@ def new_loan_request_post():
     return redirect(url_for('user_loan_request'))
 
 
-# Display All Players
 @app.route("/request/<int:loan_request_id>/update", methods=['GET', 'POST'])
 @login_required
 def update_request(loan_request_id):
@@ -116,7 +111,7 @@ def update_request(loan_request_id):
     return render_template('update_request.html', loan_request=loan_request)
 
 
-# Delete Players
+
 @app.route("/request/<int:loan_request_id>/delete", methods=['GET', 'POST'])
 @login_required
 def delete_request(loan_request_id):
