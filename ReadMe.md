@@ -97,8 +97,8 @@ This project will be based upon:
 - *After pressing that button, you will be asking to fulfill required fields in order to make request.*
 ### 4. Now you should see all your existing loan requests
 - *There will be a table displaying data from a database*
-    <p>First Row: Your loan amount </p>
-    <p>Second Row: Your estimated pay day </p>
+    <p>First Column: Your loan amount </p>
+    <p>Second Columm: Your estimated pay day </p>
 ### 5. Now all what you need its - wait.
 - *One of our emoloyee is going to review your request and contact you via E-mail (Not 100% confirmed :))*
 ### 6. In a mean time you can explore our website. You are able to edit your request or even delete it!
