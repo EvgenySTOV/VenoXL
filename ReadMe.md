@@ -46,43 +46,19 @@ This project will be based upon:
 ```
          pip3 install -r requirements.txt
 ```
-6. Log into MySQL
-```
-         sudo mysql -u root
-```
-7. Create the user which matches what is written in app.py
-```
-         CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
-```
-8. Grant the necessary privileges to the newly created user
-```
-         GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
-```
-9. Flush the privileges to update the privileges table
-```
-         FLUSH PRIVILEGES;
-```
-10. Create the database which matches the database name written in app.py
-```
-         CREATE DATABASE venox1;
-```
-11. Exit out of MySQL
-```
-         EXIT
-```
-12. Change directory
+6. Change directory
 ```
          cd /Bank
 ```
-13. Create the tables
+7. Create the tables
 ```
          python3 create.py
 ```
-14. Start the app
+8. Start the app
 ```
          python3 app.py        
 ```  
-15. Deactive the virtual environment
+9. Deactive the virtual environment
 ```
          deactivate
 ```
